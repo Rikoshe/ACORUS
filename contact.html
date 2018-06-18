@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Acorus</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7CRubik%7CWork+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--=================================================HEADER START============================================================-->
+  <header>
+    <figure id="logo">
+      <img src="img/logo.png" alt="Acorus website's logo">
+    </figure>
+
+    <nav>
+      <ul class="flex">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+<!--=================================================HEADER END============================================================-->
+
+<!--=================================================CONTENT START============================================================-->
+<div class="contact-box">
+  <h1>Me contacter</h1>
+    <form action="" method="post">
+      <label for="prenom">Prénom</label><br>
+        <input type="text" name="prenom" autofocus><br>
+      <label for="nom">Nom</label><br>
+        <input type="text" name="nom"><br>
+      <label for="email">Email</label><br>
+        <input type="email" name="email"><br>
+      <label for="prenom">Message</label><br>
+        <textarea name="message" id="" cols="80" rows="10"></textarea><br>
+        <input type="submit" value="Envoyer">
+    </form>
+</div>
+
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBqfraCUJ8wfciFSymQVwMYhIY4NjE-Q&callback=myMap"></script>
+<!--=================================================CONTENT END============================================================-->
+
+<!--=================================================FOOTER START============================================================-->
+  <footer>
+    <h2>Follow us!</h2>
+    <div id="sn-box">
+      <ul>
+        <li><i class="fab fa-facebook-f"></i><a href="">Facebook</a></li>
+        <li><i class="fab fa-twitter"></i><a href="">Twitter</a></li>
+        <li><i class="fab fa-linkedin-in"></i><a href="">Linkedin</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div>
+      <pre>
+        ACORUS NATURAL POOLS
+        567 Smoking waters ave.
+        98880 Noumea
+        NEW-CALEDONIA
+      </pre>
+    </div>
+  </footer>
+<!--=================================================FOOTER END============================================================-->
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
